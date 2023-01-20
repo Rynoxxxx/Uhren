@@ -5,11 +5,9 @@ public class Uhr{
     //[...]
 
     public Uhr(double pX, double pY){
-        dasZiffernblatt = new Ziffernblatt(pX,pY);         
-        //[...]
+        dasZiffernblatt = new Ziffernblatt(pX,pY);
+
     }
 
-    public void weiter(){
-        //[...]        
-    }   
+
 }
