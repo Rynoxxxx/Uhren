@@ -1,9 +1,10 @@
 import GLOOP.*;
-public class Zeiger{   
-    //[...]  
+
+public class Zeiger{
+    GLZylinder zeiger;
 
     public void weiter(){
-        //[...]
+
     }
 
 }

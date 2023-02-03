@@ -10,9 +10,9 @@ public class Uhrenszene{
         kamera = new GLEntwicklerkamera();
         licht  = new GLLicht(50,50,50);
         tastatur = new GLTastatur();
-        kamera.setzePosition(50,50,-100);
+        kamera.setzePosition(50,50,1000);
         wand = new Wand();
-        wand.Wand(0,0,0);
+        wand.Wand(0,0,-10);
         uhr = new Uhr(0, 0);
 
 
