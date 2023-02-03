@@ -5,18 +5,23 @@ public class Uhrenszene{
     private GLTastatur tastatur;
     private Wand wand;
     private Uhr uhr;
+    private SekundenzeigerKlasse Sekundenzeiger;
 
-    public void Uhrenszene(){
+    public void Uhrenszene() {
         kamera = new GLEntwicklerkamera();
-        licht  = new GLLicht(50,50,50);
+        licht = new GLLicht(50, 50, 50);
         tastatur = new GLTastatur();
-        kamera.setzePosition(50,50,1000);
+        kamera.setzePosition(50, 50, 1000);
         wand = new Wand();
-        wand.Wand(0,0,-10);
+        wand.Wand(0, 0, -10);
         uhr = new Uhr(0, 0);
+        Sekundenzeiger = new SekundenzeigerKlasse();
+    }
+
+
 
 
         }
 
-    }
+
 
