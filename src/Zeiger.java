@@ -1,8 +1,7 @@
 import GLOOP.*;
 
 public class Zeiger{
-    GLZylinder zeiger;
-
+    GLZylinder zeiger;//
     public void weiter(){
 
     }
