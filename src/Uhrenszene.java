@@ -5,7 +5,7 @@ public class Uhrenszene{
     private GLTastatur tastatur;
     private Wand wand;
     private Uhr uhr;
-    private SekundenzeigerKlasse Sekundenzeiger;
+
 
     public void Uhrenszene() {
         kamera = new GLEntwicklerkamera();
@@ -15,8 +15,13 @@ public class Uhrenszene{
         wand = new Wand();
         wand.Wand(0, 0, -10);
         uhr = new Uhr(0, 0);
-        Sekundenzeiger = new SekundenzeigerKlasse();
+
+        while(!tastatur.esc()){
+        uhr.weiter();
+        Sys.warte(50);
+        }
     }
+
 
 
 
