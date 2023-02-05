@@ -14,7 +14,7 @@ public class Stundenzeiger {
         StuZeigerPosY = pY;
     }
     public void stuDrehe(){
-        zeiger.drehe(0,0,-0.0083,StuZeigerPosX,StuZeigerPosY,0);
+        zeiger.drehe(0,0,-0.0083,StuZeigerPosX,StuZeigerPosY,0);//-0.0083
     }
 
 }

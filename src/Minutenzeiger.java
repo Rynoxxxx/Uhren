@@ -13,7 +13,7 @@ public class Minutenzeiger {
         MinZeigerPosY = pY;
     }
     public void minDrehe(){
-        zeiger.drehe(0,0,-0.1,MinZeigerPosX,MinZeigerPosY,0);
+        zeiger.drehe(0,0,-0.1,MinZeigerPosX,MinZeigerPosY,0);//-0.1
     }
 
 }
