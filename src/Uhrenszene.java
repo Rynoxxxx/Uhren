@@ -22,12 +22,7 @@ public class Uhrenszene {
         uhr2 = new Uhr(0,450);
         datum = new GLTafel(140,0,0,55,35);
         Zeitanpassung();
-        /*while (!tastatur.esc()) {
-            uhr1.weiter();
-            Sys.warte(50);
-        }
 
-         */
     }
         //zeitanpassung der Uhren
 
@@ -51,8 +46,9 @@ public class Uhrenszene {
                     System.out.println(anpassungSek);
 
 
-                    anpassungStu=anpassungStu*12*60;                                //HIER FEHLER
-                    anpassungMin=anpassungMin*60;
+                                                    //HIER FEHLER
+                    anpassungMin=anpassungMin*60+anpassungSek;
+                    anpassungStu=anpassungStu*60*60+anpassungMin;
 
                     //uhr1
 
