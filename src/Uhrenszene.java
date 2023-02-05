@@ -51,25 +51,37 @@ public class Uhrenszene {
                     System.out.println(anpassungSek);
 
 
-                    //anpassungStu=anpassungStu*722;
+                    anpassungStu=anpassungStu*12*60;                                //HIER FEHLER
                     anpassungMin=anpassungMin*60;
 
+                    //uhr1
 
                     for (int stu = 0; stu < anpassungStu; stu++) {
                         uhr1.weiterStu();
+                        uhr2.weiterStu();
                     }
                     for (int min = 0; min < anpassungMin; min++) {
                         uhr1.weiterMin();
+                        uhr2.weiterMin();
                     }
                     for (int sek = 0; sek < anpassungSek; sek++) {
                         uhr1.weiterSek();
+                        uhr2.weiterSek();
                     }
+
+
+                    //uhr2
+
+
+
 
                     while(!tastatur.esc()) {
                         uhr1.weiterStu();
                         uhr1.weiterMin();
                         uhr1.weiterSek();
-
+                        uhr2.weiterStu();
+                        uhr2.weiterMin();
+                        uhr2.weiterSek();
                         Sys.warte(1000);
                     }
 
