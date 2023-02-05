@@ -7,7 +7,8 @@ public class Uhrenszene {
     private Wand wand;
     private Uhr uhr1, uhr2, uhr3;
 
-    int anpassungStu, anpassungMin, anpassungSek, zeitJetzt;
+    private GLTafel datum;
+    int anpassungStu, anpassungMin, anpassungSek, anpassungDatum, zeitJetzt;
 
 
     public void Uhrenszene() {
@@ -19,6 +20,7 @@ public class Uhrenszene {
         wand.Wand(0, 0, -10);
         uhr1 = new Uhr(0, 0);
         uhr2 = new Uhr(0,450);
+        datum = new GLTafel(140,0,0,55,35);
         Zeitanpassung();
         /*while (!tastatur.esc()) {
             uhr1.weiter();
@@ -31,10 +33,14 @@ public class Uhrenszene {
 
             public void Zeitanpassung(){
                     Calendar jetzt = Calendar.getInstance();
-                    Calendar heute = Calendar.getInstance();
+                    //Calendar heute = Calendar.getInstance();
                     anpassungStu = (jetzt.get(Calendar.HOUR_OF_DAY));// passt die Stunde an
                     anpassungMin = (jetzt.get(Calendar.MINUTE));// passt die minute an
                     anpassungSek = (jetzt.get(Calendar.SECOND));// passt die sekunde an
+                    anpassungDatum = (jetzt.get(Calendar.DATE));
+
+                    datum.setzeText(String.valueOf(anpassungDatum),25);
+
 
                     if(anpassungStu>12) anpassungStu = anpassungStu - 12;           //
 
