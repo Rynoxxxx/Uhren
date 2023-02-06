@@ -38,7 +38,7 @@ public class Uhrenszene {
                     //Calendar heute = Calendar.getInstance();
                     anpassungStu = (jetzt.get(Calendar.HOUR_OF_DAY));// passt die Stunde an
                     anpassungMin = (jetzt.get(Calendar.MINUTE));// passt die minute an
-                    anpassungSek = (jetzt.get(Calendar.SECOND));// passt die sekunde an
+                    anpassungSek = (jetzt.get(Calendar.SECOND))+4;// passt die sekunde an
 
 
                     //datum.setzeText(String.valueOf(anpassungDatum),25); //datum
