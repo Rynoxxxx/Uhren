@@ -5,8 +5,8 @@ public class Uhr{
     private Stundenzeiger stunden;
 
 
-    public Uhr(double pX, double pY){
-        dasZiffernblatt = new Ziffernblatt(pX,pY);
+    public Uhr(double pX, double pY, String Ziffer, String Uhr, int Datum){
+        dasZiffernblatt = new Ziffernblatt(pX,pY,Ziffer,Uhr, Datum);
         sekunden = new Sekundenzeiger(pX,pY);
         minuten = new Minutenzeiger(pX,pY);
         stunden = new Stundenzeiger(pX,pY);
